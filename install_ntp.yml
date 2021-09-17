@@ -1,0 +1,9 @@
+---
+ - name: install ntp
+   hosts: host
+   tasks:
+    - name: install ntp
+      apt:
+       name: ntp
+       state: present
+      
