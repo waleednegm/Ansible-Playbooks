@@ -1,0 +1,8 @@
+---
+ -
+   hosts: host
+   tasks:
+    - name: install tmux
+      apt:
+       name: tmux
+       state: latest
