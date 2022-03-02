@@ -1,0 +1,16 @@
+---
+
+- name: Simple Configuration
+  hosts: routers
+  tasks:
+  - name: Add Banner
+    ios_banner:
+      banner: login
+      text: |
+        Hello There
+      state: present
+
+  - name: Add loopback
+    ios_interface:
+      name: Loopback25
+      state: present 
